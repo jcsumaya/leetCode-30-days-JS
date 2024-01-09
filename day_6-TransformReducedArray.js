@@ -9,9 +9,7 @@ var reduce = function (nums, fn, init) {
 
     let out = init;
 
-    for (num of nums) {
-        out = fn(out, num);
-    }
+    for (num of nums) out = fn(out, num)
 
     return out;
 };  
