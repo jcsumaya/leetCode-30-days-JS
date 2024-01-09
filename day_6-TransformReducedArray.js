@@ -14,4 +14,7 @@ var reduce = function (nums, fn, init) {
     }
 
     return out;
-};
+};  
+
+var out = reduce([1,2,3,4], function sum(accum, curr) { return accum + curr; }, 0);
+console.log(out);
